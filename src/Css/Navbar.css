@@ -1,0 +1,133 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 8vh;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-image {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-input {
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 15px;
+    height: 3vh;
+}
+.search-input:focus {
+    outline: none;
+}
+
+.about-button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: transparent;
+    font-size: medium;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.login-signup {
+    background: transparent;
+    width: 100px;
+    border-radius: 20px;
+    height: 35px;
+    color: #051b3a;
+    font-weight: 700;
+    outline: none;
+    border: 1px solid;
+    font-size: medium;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-signup:hover {
+    color: white;
+    border-color: #051b3a;
+    background: #051b3a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-left, .navbar-right {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .search-input {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .login-signup, .about-button {
+        width: auto;
+        padding: 6px 12px;
+        font-size: small;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    .search-input {
+        width: 70%;
+    }
+
+    .navbar-left {
+        gap: 2px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+
+    .login-signup, .about-button {
+        padding: 5px 10px;
+        font-size: small;
+    }
+}
