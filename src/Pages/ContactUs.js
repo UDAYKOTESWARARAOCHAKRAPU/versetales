@@ -1,8 +1,8 @@
     // ContactUs.js
     import React, { useState } from 'react';
     import '../Css/ContactUs.css';
-    import Navbar from './Navbar';
-    import Footer from './Footer';
+    import Navbar from '../Components/Navbar';
+    import Footer from '../Components/Footer';
 
     const ContactUs = () => {
     const [formData, setFormData] = useState({

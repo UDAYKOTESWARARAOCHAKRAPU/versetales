@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Css/About.css';
-import Card from './Card';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Card from '../Components/Card';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const AboutUs = () => {
     return (

@@ -1,0 +1,49 @@
+/* CatStories.css */
+
+.cat-stories-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 stories per row */
+    gap: 20px;
+}
+
+.story-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.story-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.no-stories-message {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #555;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+}
+@media (max-width: 768px) {
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 stories per row for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .stories-grid {
+        grid-template-columns: 1fr; /* 1 story per row for extra small screens */
+    }
+}
