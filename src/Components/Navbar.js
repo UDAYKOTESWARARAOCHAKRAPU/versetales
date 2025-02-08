@@ -1,28 +1,28 @@
-    import React from 'react';
-    import { Link } from 'react-router-dom';
-    import '../Css/Navbar.css';
-    import logo from '../Images/ud.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../Css/Navbar.css';
+import logo from '../Images/ud.png'
 
-    import logoImage from '../Images/logo.png'; 
+import logoImage from '../Images/logo.png';
 
-    const Navbar = () => {
+const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
                 <Link to='/'><img src={logoImage} alt="Logo" className="logo-image" /></Link>
                 <h1 className="logo">
-                <Link to='/'>
-                    {/* <span style={{ color: '#051b3a', fontFamily: 'Caveat, cursive', transform: 'skew(-50deg)' }}>
+                    <Link to='/'>
+                        {/* <span style={{ color: '#051b3a', fontFamily: 'Caveat, cursive', transform: 'skew(-50deg)' }}>
                         <span style={{ fontSize: '25px' }}>V</span>erse
                     </span>
                     <span style={{ color: '#92b1e8', fontFamily: 'Caveat, cursive', transform: 'skew(-50deg)' }}>
                         <span style={{ fontSize: '25px' }}>T</span>ales
                     </span> */}
-                    <img src={logo} style={{ width: '150px', height: '100%'}} />
-                </Link>
+                        <img src={logo} style={{ width: '150px', height: '100%' }} />
+                    </Link>
                 </h1>
                 <div className="search-bar">
-                <input type="text" className='search-input' placeholder="Search stories" />
+                    <input type="text" className='search-input' placeholder="Search stories" />
                 </div>
             </div>
             <div className="navbar-right">
@@ -32,6 +32,6 @@
             </div>
         </nav>
     );
-    };
+};
 
-    export default Navbar;
+export default Navbar;

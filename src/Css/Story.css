@@ -1,0 +1,169 @@
+/* Story Page */
+.story-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Story Container */
+.story-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: #92b1e8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Story Image */
+.story-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Title & Description */
+.story-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #051b3a;
+}
+
+.story-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Custom Audio Player */
+.custom-audio-player {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    background: #051b3a;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Play/Pause Button */
+.control-button {
+    background: #92b1e8;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    width: 55px;
+    height: 55px;
+}
+
+.control-button:hover {
+    background: white;
+    color: #051b3a;
+    box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Seek Bar */
+.progress-bar {
+    width: 100%;
+    max-width: 300px;
+    height: 6px;
+    background: #92b1e8;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 3px solid #92b1e8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Time Indicator */
+.time-indicator {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+/* Story Details Block */
+.det-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Blurred Background */
+.det-story::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Use the same background image */
+    filter: blur(10px); /* Apply blur effect */
+    z-index: -1;
+}
+
+/* Dark Overlay for Better Readability */
+.det-story::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 0;
+}
+
+/* Text inside details */
+.det-title,
+.det-info {
+    position: relative;
+    z-index: 2; 
+    color: white;
+}
+
+.det-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.det-info {
+    text-align: left;
+    width: 100%;
+}
+
+.det-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    line-height: 1.5;
+}

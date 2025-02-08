@@ -18,7 +18,6 @@ h2 {
     overflow-x: auto; /* Horizontal scrolling */
     padding: 10px;
     scroll-behavior: smooth; /* Smooth scrolling effect */
-
     /* Hide scrollbar */
     scrollbar-width: none; /* Firefox */
 }
